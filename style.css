@@ -1,0 +1,56 @@
+.head-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 30px;
+}
+
+.head-title{
+    font-family: 'PT Serif Caption', serif;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.head-text-body{
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+}
+
+.images-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+    margin: 30px; 
+}
+
+.member-photos img{
+    width: 100%;
+}
+
+.member-img figcaption p{
+    transform: rotate(90deg);
+    position: relative;
+    top: -230px;
+    left: 115px;
+}
+
+@media screen and (max-width:600px) {
+    .head-container{
+        width: fit-content;
+    }
+
+    .images-container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .member-img{
+        width: 100%;
+        margin: auto; 
+    }
+
+    .photo2, .photo4, .photo6{
+        margin-top: 40px;
+    }
+}
+
